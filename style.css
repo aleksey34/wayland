@@ -28,12 +28,6 @@ Version: 1.0
     transform: translate(-50%, -50%);
     margin-top: 1rem; }
 
-#schema-lg-section #schema-border-wrap, #schema-md-section #schema-border-wrap, #schema-sm-section #schema-border-wrap {
-  padding: 5px;
-  border: 1px solid #000; }
-  #schema-lg-section #schema-border-wrap > div, #schema-md-section #schema-border-wrap > div, #schema-sm-section #schema-border-wrap > div {
-    border: 1px solid #000; }
-
 #site-header {
   position: absolute !important;
   background-color: transparent !important; }
@@ -80,13 +74,79 @@ Version: 1.0
   height: 20px;
   background: url("img/btn-scroll-arrow.png") center center no-repeat; }
 
-@media only screen and (max-width: 1600px) {
-  * {
-    background-color: red !important;
-    color: red !important; } }
-* {
-  color: red !important; }
+@media only screen and (max-width: 1024px) {
+  #benefit-body-section .elementor-section:first-child .elementor-widget-container {
+    position: relative; }
+    #benefit-body-section .elementor-section:first-child .elementor-widget-container:before {
+      position: absolute;
+      content: "";
+      display: inline-block;
+      width: 75px;
+      height: 75px;
+      background: url("img/benefit-corner-md.png") center center/100% no-repeat;
+      left: -75px;
+      top: 0; }
+  #benefit-body-section .elementor-section:last-child .elementor-widget-container {
+    position: relative; }
+    #benefit-body-section .elementor-section:last-child .elementor-widget-container:before {
+      position: absolute;
+      content: "";
+      display: inline-block;
+      width: 75px;
+      height: 75px;
+      background: url("img/benefit-corner-md.png") center center/100% no-repeat;
+      right: -75px;
+      top: 0;
+      transform: rotate(180deg); }
+  #benefit-body-section .elementor-section:nth-child(2) .elementor-column:first-child .elementor-widget-container {
+    position: relative; }
+    #benefit-body-section .elementor-section:nth-child(2) .elementor-column:first-child .elementor-widget-container:before {
+      position: absolute;
+      content: "";
+      display: inline-block;
+      width: 75px;
+      height: 75px;
+      background: url("img/benefit-corner-md.png") center center/100% no-repeat;
+      right: -75px;
+      top: 0;
+      transform: rotate(180deg); }
+  #benefit-body-section .elementor-section:nth-child(2) .elementor-column:last-child .elementor-widget-container {
+    position: relative; }
+    #benefit-body-section .elementor-section:nth-child(2) .elementor-column:last-child .elementor-widget-container:before {
+      position: absolute;
+      content: "";
+      display: inline-block;
+      width: 75px;
+      height: 75px;
+      background: url("img/benefit-corner-md.png") center center/100% no-repeat;
+      left: -75px;
+      top: 0; } }
+@media only screen and (max-width: 767px) {
+  #benefit-body-section .elementor-section:first-child .elementor-widget-container:before {
+    background: url("img/benefit-corner-sm.png") center center/100% no-repeat;
+    left: 50%;
+    top: 116%;
+    transform: translate(-50%, -50%);
+    z-index: 9; }
+  #benefit-body-section .elementor-section:last-child .elementor-widget-container:before {
+    content: none; }
+  #benefit-body-section .elementor-section:nth-child(2) .elementor-column:first-child .elementor-widget-container:before, #benefit-body-section .elementor-section:nth-child(2) .elementor-column:last-child .elementor-widget-container:before {
+    background: url("img/benefit-corner-sm.png") center center/100% no-repeat;
+    left: 50%;
+    top: 110%;
+    transform: rotate(0deg) translate(-50%, -50%);
+    z-index: 9; } }
+#schema-lg-section #schema-border-wrap, #schema-lg-section #schema-md-section, #schema-lg-section #schema-sm-section {
+  padding: 5px;
+  border: 1px solid #000; }
+  #schema-lg-section #schema-border-wrap > div, #schema-lg-section #schema-md-section > div, #schema-lg-section #schema-sm-section > div {
+    border: 1px solid #000; }
 
+@media only screen and (max-width: 1024px) {
+  #schema-lg-section #schema-border-wrap, #schema-md-section #schema-border-wrap, #schema-sm-section #schema-border-wrap {
+    border: none !important; }
+    #schema-lg-section #schema-border-wrap > div, #schema-md-section #schema-border-wrap > div, #schema-sm-section #schema-border-wrap > div {
+      border: none !important; } }
 #faq-carousel-section .elementor-swiper-button.elementor-swiper-button-prev {
   transform: translateY(216px) translateX(1px); }
 #faq-carousel-section .elementor-swiper-button.elementor-swiper-button-next {

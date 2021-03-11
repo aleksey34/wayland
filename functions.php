@@ -39,13 +39,13 @@ require_once get_stylesheet_directory() . '/inc/wp-start-login-page.php';
 
 // don't need  @import  in css
 // parent style in parent assents
-add_action( 'wp_enqueue_scripts', 'electronic_child_theme_scripts' );
-function electronic_child_theme_scripts() {
+add_action( 'wp_enqueue_scripts', 'wayland_child_theme_scripts' );
+function wayland_child_theme_scripts() {
 //wp_enqueue_style( 'oceanwp-parent-style',  . '/style.css' );
 //wp_enqueue_style( 'oceanwp-parent-style', get_template_directory_uri() . '/style.css' );
   //  wp_enqueue_style( 'mytheme-style', get_template_directory_uri() .'/style.css' );
    // wp_enqueue_style( 'daikin-theme', trailingslashit( get_stylesheet_directory_uri() ) . '/style.css');
-    wp_enqueue_style( 'daikin-theme-style',  get_stylesheet_directory_uri()  . '/style.css');
+    wp_enqueue_style( 'wayland     -theme-style',  get_stylesheet_directory_uri()  . '/style.css');
 //    wp_enqueue_style( 'style_name_1', trailingslashit( get_stylesheet_directory_uri() ) . '/assets/your_style_name.css');
 }
 
