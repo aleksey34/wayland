@@ -80,10 +80,17 @@ Version: 1.0
   height: 20px;
   background: url("img/btn-scroll-arrow.png") center center no-repeat; }
 
+@media only screen and (max-width: 1600px) {
+  * {
+    background-color: red !important;
+    color: red !important; } }
+* {
+  color: red !important; }
+
 #faq-carousel-section .elementor-swiper-button.elementor-swiper-button-prev {
-  transform: translateY(216px) translateX(5px); }
+  transform: translateY(216px) translateX(1px); }
 #faq-carousel-section .elementor-swiper-button.elementor-swiper-button-next {
-  transform: translateY(216px) translateX(-5px); }
+  transform: translateY(216px) translateX(-1px); }
 #faq-carousel-section .elementor-swiper-button.elementor-swiper-button-prev, #faq-carousel-section .elementor-swiper-button.elementor-swiper-button-next {
   z-index: 999; }
   #faq-carousel-section .elementor-swiper-button.elementor-swiper-button-prev .eicon-chevron-left:before, #faq-carousel-section .elementor-swiper-button.elementor-swiper-button-next .eicon-chevron-left:before {
